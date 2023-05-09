@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HidingKeyboardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top-view-background" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-WS-LEb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="vNy-dw-T9P">
+                                <rect key="frame" x="20" y="268.33333333333337" width="353" height="315.33333333333337"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-Tn-z8n">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="35.333333333333336"/>
+                                        <color key="backgroundColor" red="0.99667197470000002" green="0.92185157539999996" blue="0.92136633400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrT-PM-RmG">
+                                        <rect key="frame" x="0.0" y="93.333333333333371" width="353" height="35.333333333333343"/>
+                                        <color key="backgroundColor" red="0.99667197470000002" green="0.92185157539999996" blue="0.92136633400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Profession" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ulH-XU-Baa">
+                                        <rect key="frame" x="0.0" y="186.66666666666669" width="353" height="35.333333333333343"/>
+                                        <color key="backgroundColor" red="0.99667197470000002" green="0.92185157539999996" blue="0.92136633400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRQ-WL-Q7b">
+                                        <rect key="frame" x="0.0" y="280.00000000000006" width="353" height="35.333333333333314"/>
+                                        <color key="backgroundColor" red="0.99667197470000002" green="0.92185157539999996" blue="0.92136633400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BeJ-WS-LEb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Aa-Vd-A1E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vNy-dw-T9P" secondAttribute="trailing" constant="20" id="3Nm-2L-Vs9"/>
+                            <constraint firstItem="vNy-dw-T9P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D2l-bo-23E"/>
+                            <constraint firstItem="BeJ-WS-LEb" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="EVC-jb-e3P"/>
+                            <constraint firstItem="vNy-dw-T9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KH9-8a-NCI"/>
+                            <constraint firstItem="BeJ-WS-LEb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="OT0-QY-ygG"/>
+                            <constraint firstItem="vNy-dw-T9P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dG7-Mp-AGe"/>
+                            <constraint firstItem="BeJ-WS-LEb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="otu-xF-bq4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="dRQ-WL-Q7b" id="2D2-zl-XLo"/>
+                        <outlet property="ageTextField" destination="WrT-PM-RmG" id="lVA-sD-90o"/>
+                        <outlet property="nameTextField" destination="Jsp-Tn-z8n" id="Pi7-FE-bLa"/>
+                        <outlet property="professionTextField" destination="ulH-XU-Baa" id="hgX-jr-Lt7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="top-view-background" width="626" height="417"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
